@@ -39,7 +39,7 @@ def bruteforce(ip_addr, flag, attack_name):
 
 try:
  	if __name__ == "__main__":
- 		flags = {"xmas scan":'tcp[tcpflags] & tcp-fin == tcp-fin and tcp[tcpflags] & tcp-push == tcp-push and tcp[tcpflags] & tcp-urg == tcp-urg', "FIN Scan": "tcp[tcpflags] & tcp-fin == tcp-fin", "ACK Scan": "tcp[tcpflags] & tcp-ack == tcp-ack"}
+ 		flags = {"xmas scan":'tcp[tcpflags] & tcp-fin == tcp-fin and tcp[tcpflags] & tcp-push == tcp-push and tcp[tcpflags] & tcp-urg == tcp-urg'}
  		ip = " 192.168.2.110 "
  		thread_list = []
  		for i in flags:
